@@ -1,0 +1,209 @@
+#main{
+    display: flex;
+}
+
+#content{
+    padding-left: 300px;
+}
+
+#fful{
+    height: 850px;
+    width: 250px;
+    border-style: dashed;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.checkbox_cs{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox_cs+label{
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.checkbox_cs+label::before{
+    content: '';
+    width: 1em;
+    border: 1px solid #adb5bd;
+    margin-right: 0.5em;
+    background-size: 100% 100%;
+}
+
+.checkbox_cs:checked+label::before{
+    border-color: #ffffff;
+    background-color: #0704ad;
+}
+
+.checkbox_cs:not(:disabled):not(:checked)+label:hover::before{
+  border-color: #0704ad;
+}
+
+#bful{
+    width: 230px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #1d1adf;
+    border-radius: 10px; 
+}
+  
+#bful:hover{
+    background-color: #0704ad;
+    color: #fff;
+}
+
+.but{
+    width: 230px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid #1d1adf;
+    border-radius: 10px; 
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+  
+.but:hover{
+    background-color: #f8f8f8;
+}
+
+.filt{
+    font-size: 18px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#card{
+    height: 220px;
+    width: 900px;
+    display: flex;   
+    border-style: dashed;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#card_cart{
+    height: 220px;
+    width: 700px;
+    display: flex;   
+    border-style: dashed;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#card_left{
+    display: flex;   
+    margin-block: auto;
+}
+
+#card_right{
+    margin-left: auto;
+    margin-block: -20px;
+}
+
+#card_price{
+    padding: 22px;
+    font-weight: 900;
+    font-size: 24px; 
+    padding-left: 40px;
+    margin-block-end: -10px;
+}
+
+#card_name{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btnbuy{
+    width: 110px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid #1d1adf;
+    border-radius: 10px; 
+}
+  
+.btnbuy:hover{
+    border: 1px solid #1d1adf;
+}
+
+.side-panel{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -790px;
+    background: #ffffff;
+    transition: all 0.5s;   
+    width: 750px;
+    height: 850px;
+    padding: 40px 20px;
+}
+
+#card_bas{
+    margin-left: 40px;
+}
+
+.side-button-1-wr{
+    text-align: center;
+    margin-left: -70px;
+}
+
+#cart{
+    width: 30px;
+    height: 30px; 
+}
+
+#itog{
+    color: #414141;
+    display: flex;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+#itog_sum{
+    padding-left: 530px;
+    font-size: 30px;
+}
+
+.side-button-1 .side-b{
+    margin-top: -0px;
+    width: 30px;
+    height: 70px; 
+    padding: 10px 10px;
+    border-radius: 100px 0% 0% 100px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    line-height: 90px;
+    color: #ffffff;
+    background: #ffffff; 
+}
+
+.side-button-1 .side-b:hover {
+    margin-top: -0px;
+    width: 30px;
+    height: 70px; 
+    padding: 10px 10px;
+    border-radius: 100px 0% 0% 100px;
+    line-height: 90px;
+    color: #ffffff;
+    background: #1d1adf;    
+}
+
+#side-checkbox{
+    opacity: 0;
+}
+
+#side-checkbox:checked + .side-panel{
+    right: 0;
+    box-shadow: 0px 2px 400px 2000px rgba(0, 0, 0, 0.89);    
+}
